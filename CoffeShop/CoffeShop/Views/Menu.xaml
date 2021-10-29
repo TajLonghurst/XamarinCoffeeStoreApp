@@ -36,18 +36,8 @@
                         <Label Text="+64 022 103 9553: " FontSize="30"/>
                         <Label Text="Email: " FontSize="20" Font="Bold"/>
                         <Label Text="JoesCoffee@gmail.com: " Padding="0,0,0,30" FontSize="30"/>
-                        <Label>
-                            <Label.FormattedText>
-                                <FormattedString>
-                                    <Span Text="Alternatively, click "/>
-                                    <Span Text="here" TextColor="Blue" TextDecorations="Underline">
-                                        <Span.GestureRecognizers>
-                                            <TapGestureRecognizer Command="{Binding TapCommand}" CommandParameter="https://docs.microsoft.com/xamarin/" />
-                                        </Span.GestureRecognizers>
-                                    </Span>
-                                </FormattedString>
-                            </Label.FormattedText>
-                        </Label>
+                        <ImageButton BackgroundColor="Transparent" Source="https://elearning.tki.org.nz/var/eel/storage/images/media/images/instagram-logo-lge/53551-2-eng-NZ/Instagram-logo-lge_imagelarge.png" VerticalOptions="Start" HeightRequest="100" WidthRequest="100" Clicked="Button_Clicked" ></ImageButton>
+                        <ImageButton BackgroundColor="Transparent" Source="https://www.facebook.com/images/fb_icon_325x325.png" HeightRequest="100" WidthRequest="100" Clicked="ImageButton_Clicked_1"></ImageButton>
                     </StackLayout>
                 </ScrollView>
             </Grid>
