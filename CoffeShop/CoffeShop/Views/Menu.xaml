@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CoffeShop.Views.Menu"
+             Title="About">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Accent">#013A63</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <StackLayout BackgroundColor="{StaticResource Accent}" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Start" VerticalOptions="Center">
+                        <ContentView Padding="20,20,20,20" VerticalOptions="FillAndExpand">
+                            <Image Source="https://i.ibb.co/rHwVyzZ/Coffee-Logo.png" VerticalOptions="Center" HeightRequest="80"/>
+                        </ContentView>
+                        <ContentView Padding="0,0,0,0" VerticalOptions="Center" HorizontalOptions="Start">
+                            <Label Text="Uncle Joe's Coffee" FontSize="30" TextColor="White" Font="Bold"/>
+                        </ContentView>
+                    </StackLayout>
+                </StackLayout>
+                <ScrollView Grid.Row="1">
+                    <StackLayout Orientation="Vertical" Padding="30,0,30,0" Spacing="10">
+                        <Image Source="https://www.comunicaffe.com/wp-content/uploads/2017/07/Specialty-Coffee-Shop.jpg" VerticalOptions="Center" HeightRequest="220"></Image>
+                        <Label Text="Address: " FontSize="20" Font="Bold"/>
+                        <Label Text="105 Garent road: " FontSize="30"/>
+                        <Label Text="Phone Number: " FontSize="20" Font="Bold"/>
+                        <Label Text="+64 022 103 9553: " FontSize="30"/>
+                        <Label Text="Email: " FontSize="20" Font="Bold"/>
+                        <Label Text="JoesCoffee@gmail.com: " Padding="0,0,0,30" FontSize="30"/>
+                        <Label>
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="Alternatively, click "/>
+                                    <Span Text="here" TextColor="Blue" TextDecorations="Underline">
+                                        <Span.GestureRecognizers>
+                                            <TapGestureRecognizer Command="{Binding TapCommand}" CommandParameter="https://docs.microsoft.com/xamarin/" />
+                                        </Span.GestureRecognizers>
+                                    </Span>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                    </StackLayout>
+                </ScrollView>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

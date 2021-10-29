@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CoffeShop.Views.Quickbites">
+    
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Accent">#013A63</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <ScrollView Grid.Row="1">
+                    <StackLayout Orientation="Vertical" Padding="30,30,30,0"  Spacing="10">
+                        <Label FontSize="40" Text="Quick bites" FontAttributes="Bold"></Label>
+                        <Frame Padding="20,20,20,20" HasShadow="True">
+                            <StackLayout>
+                                <Image Source="https://i.ibb.co/1bjPqmP/donut.png" HeightRequest="200"></Image>
+                                <Label Text="Bagle" FontSize="15" Font=""/>
+                                <BoxView Color="Gray"  HeightRequest="2" HorizontalOptions="Fill"></BoxView>
+                                <Label Text="Price: $7.50" FontSize="21" Font="Bold"/>
+                            </StackLayout>
+                        </Frame>
+                        <Frame Padding="20,20,20,20" HasShadow="True">
+                            <StackLayout>
+                                <Image Source="https://www.kingarthurbaking.com/sites/default/files/2021-07/Deep-Dark-Brownies-KAF_21-1_01.jpg" HeightRequest="200" VerticalOptions="Fill"></Image>
+                                <Label Text="Brownie" FontSize="15" Font=""/>
+                                <BoxView Color="Gray" HeightRequest="2" HorizontalOptions="Fill"></BoxView>
+                                <Label Text="Price: $3.50" FontSize="21" Font="Bold"/>
+                            </StackLayout>
+                        </Frame>
+                        <Frame Padding="20,20,20,20" HasShadow="True">
+                            <StackLayout>
+                                <Image Source="https://i.ibb.co/Jt6TwLc/bagel-thing.png" HeightRequest="200" VerticalOptions="Fill"></Image>
+                                <Label Text="Egg Breakfast" FontSize="15" Font=""/>
+                                <BoxView Color="Gray" HeightRequest="2" HorizontalOptions="Fill"></BoxView>
+                                <Label Text="Price: $4.00" FontSize="21" Font="Bold"/>
+                            </StackLayout>
+                        </Frame>
+                        <Frame Padding="20,20,20,20" HasShadow="True">
+                            <StackLayout>
+                                <Image Source="https://i.ytimg.com/vi/3AQS0qu2pgE/maxresdefault.jpg" HeightRequest="200" VerticalOptions="Fill"></Image>
+                                <Label Text="Cheese Beef pie" FontSize="15" Font=""/>
+                                <BoxView Color="Gray" HeightRequest="2" HorizontalOptions="Fill"></BoxView>
+                                <Label Text="Price: $4.50" FontSize="21" Font="Bold"/>
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                </ScrollView>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

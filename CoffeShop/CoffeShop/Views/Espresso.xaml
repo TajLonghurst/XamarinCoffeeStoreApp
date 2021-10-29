@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CoffeShop.Views.Espresso">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Accent">#013A63</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <ListView ItemsSource="{Binding FoodsList}" HasUnevenRows="True" SeparatorVisibility="None" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Margin="6,4,6,4" BackgroundColor="White">
+                            <Label Text="{Binding EspressoName}" FontSize="15" Margin="8"></Label>
+                            <Label Text="{Binding EspressoPrice}" FontSize="21" Margin="8" Font="Bold"></Label>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ContentPage.Content>
+</ContentPage>
